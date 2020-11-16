@@ -1,0 +1,432 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EEECE900-A6D9-46B9-8777-7141D71812EE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CalcFis</RootNamespace>
+    <AssemblyName>CalcFis</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="centripeta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="centripeta.Designer.cs">
+      <DependentUpon>centripeta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dilatacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dilatacion.Designer.cs">
+      <DependentUpon>Dilatacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form10.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form10.Designer.cs">
+      <DependentUpon>Form10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Masavar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Masavar.Designer.cs">
+      <DependentUpon>Masavar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4.Designer.cs">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form5.Designer.cs">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form6.Designer.cs">
+      <DependentUpon>Form6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form7.Designer.cs">
+      <DependentUpon>Form7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form8.Designer.cs">
+      <DependentUpon>Form8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form9.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form9.Designer.cs">
+      <DependentUpon>Form9.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Masacon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Masacon.Designer.cs">
+      <DependentUpon>Masacon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu1ley.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu1ley.Designer.cs">
+      <DependentUpon>Menu1ley.cs</DependentUpon>
+    </Compile>
+    <Compile Include="menu2ley.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menu2ley.Designer.cs">
+      <DependentUpon>menu2ley.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MRU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MRU.Designer.cs">
+      <DependentUpon>MRU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MRUV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MRUV.Designer.cs">
+      <DependentUpon>MRUV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegistroDoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistroDoc.Designer.cs">
+      <DependentUpon>RegistroDoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gravedad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gravedad.Designer.cs">
+      <DependentUpon>Gravedad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="logdoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="logdoc.Designer.cs">
+      <DependentUpon>logdoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuDoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuDoc.Designer.cs">
+      <DependentUpon>MenuDoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pitagoras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pitagoras.Designer.cs">
+      <DependentUpon>pitagoras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Registro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registro.Designer.cs">
+      <DependentUpon>Registro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Relatividad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatividad.Designer.cs">
+      <DependentUpon>Relatividad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ingreso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ingreso.Designer.cs">
+      <DependentUpon>ingreso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="centripeta.resx">
+      <DependentUpon>centripeta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dilatacion.resx">
+      <DependentUpon>Dilatacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form10.resx">
+      <DependentUpon>Form10.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form4.resx">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form5.resx">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form6.resx">
+      <DependentUpon>Form6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form7.resx">
+      <DependentUpon>Form7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form8.resx">
+      <DependentUpon>Form8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form9.resx">
+      <DependentUpon>Form9.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Masacon.resx">
+      <DependentUpon>Masacon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Masavar.resx">
+      <DependentUpon>Masavar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu1ley.resx">
+      <DependentUpon>Menu1ley.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menu2ley.resx">
+      <DependentUpon>menu2ley.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MRU.resx">
+      <DependentUpon>MRU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MRUV.resx">
+      <DependentUpon>MRUV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistroDoc.resx">
+      <DependentUpon>RegistroDoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gravedad.resx">
+      <DependentUpon>Gravedad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="logdoc.resx">
+      <DependentUpon>logdoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuDoc.resx">
+      <DependentUpon>MenuDoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pitagoras.resx">
+      <DependentUpon>pitagoras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registro.resx">
+      <DependentUpon>Registro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatividad.resx">
+      <DependentUpon>Relatividad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ingreso.resx">
+      <DependentUpon>ingreso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baseline_cancel_black_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baseline_cancel_black_18dp1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Universidad_don_bosco-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sin título-1_Mesa de trabajo 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sin título-1_Mesa de trabajo 11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sin título-1_Mesa de trabajo 12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sin título-2_Mesa de trabajo 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2000px-Emc2.svg[1].png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baseline_arrow_back_black_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\registro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logig.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\log doc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mendoc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Menu docentes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Login docentes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Menufor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Registro docente.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\relatividad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inforela.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gravedad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\infograv.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pitagoras.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\infopita.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dilatacion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\infodila.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\primeraleymenu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\centripeta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\infocentri.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MRU.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\infoMRU.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MRUV.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\infomruv.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\infomruv1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu2ley.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\masacon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\infomcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\masavar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\infomasavar.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
